@@ -10,7 +10,7 @@ const options = {
     disableSpins: true, // Will disable Spinnies animation, useful for containers (docker) for a better log
 }
 
-venom.create(undefined, undefined, undefined).then((client) => start(client));
+venom.create(undefined, undefined, undefined, options).then((client) => start(client));
 
 function start(client) {
   client.onMessage((message) => {
