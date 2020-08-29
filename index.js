@@ -1,6 +1,7 @@
 const venom = require('venom-bot');
 
 const options = {    
+    headless: false, // Headless chrome
     devtools: false, // Open devtools by default
     useChrome: false, // If false will use Chromium instance
     debug: false, // Opens a debug session
